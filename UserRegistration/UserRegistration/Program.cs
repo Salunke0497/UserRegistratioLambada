@@ -18,6 +18,7 @@ namespace UserRegistration
             lambada.CheckPasswordRule1("Amol1234");
             lambada.CheckPasswordRule2("Amol1234");
             lambada.CheckPasswordRule3("Amolsal3");
+            lambada.CheckPasswordRule4("Amo5@234");
             Console.ReadLine();
         }
     }

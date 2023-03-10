@@ -91,5 +91,16 @@ namespace UserRegistration
                 Console.WriteLine("It's a not valid Password");
             }
         }
+        public void CheckPasswordRule4(string PasswordRule4)
+        {
+            if (registrationModels.Any(Amol => Amol.PasswordRule4.IsMatch(PasswordRule4)))
+            {
+                Console.WriteLine("It's a valid Password");
+            }
+            else
+            {
+                Console.WriteLine("It's a not valid Password");
+            }
+        }
     }
 }
