@@ -80,5 +80,16 @@ namespace UserRegistration
                 Console.WriteLine("It's a not valid Password");
             }
         }
+        public void CheckPasswordRule3(string PasswordRule3)
+        {
+            if (registrationModels.Any(Amol => Amol.PasswordRule3.IsMatch(PasswordRule3)))
+            {
+                Console.WriteLine("It's a valid Password");
+            }
+            else
+            {
+                Console.WriteLine("It's a not valid Password");
+            }
+        }
     }
 }

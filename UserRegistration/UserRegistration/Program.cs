@@ -17,6 +17,7 @@ namespace UserRegistration
             lambada.CheckPhoneNumber("91 8390266064");
             lambada.CheckPasswordRule1("Amol1234");
             lambada.CheckPasswordRule2("Amol1234");
+            lambada.CheckPasswordRule3("Amolsal3");
             Console.ReadLine();
         }
     }
