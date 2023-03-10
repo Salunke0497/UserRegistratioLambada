@@ -12,6 +12,7 @@ namespace UserRegistration
         {
             RegstrationLambada lambada = new RegstrationLambada();
             lambada.CheckFirstName("Amol");
+            lambada.CheckLastName("Salunke");
             Console.ReadLine();
         }
     }
