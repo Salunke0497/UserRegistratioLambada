@@ -47,5 +47,16 @@ namespace UserRegistration
                 Console.WriteLine("It's a not valid Email-Id name");
             }
         }
+        public void CheckPhoneNumber(string PhoneNumber)
+        {
+            if (registrationModels.Any(Amol => Amol.PhoneNumber.IsMatch(PhoneNumber)))
+            {
+                Console.WriteLine("It's a valid PhoneNumber name");
+            }
+            else
+            {
+                Console.WriteLine("It's a not valid PhoneNumber name");
+            }
+        }
     }
 }
