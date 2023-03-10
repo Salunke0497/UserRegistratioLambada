@@ -27,13 +27,13 @@ namespace UserRegistration
         }
         public void CheckLastName(string LastName)
         {
-            if (registrationModels.Any(Amol => Amol.FirstName.IsMatch(LastName)))
+            if (registrationModels.Any(Amol => Amol.LastName.IsMatch(LastName)))
             {
-                Console.WriteLine("It's a valid first name");
+                Console.WriteLine("It's a valid last name");
             }
             else
             {
-                Console.WriteLine("It's a not valid first name");
+                Console.WriteLine("It's a not valid last name");
             }
         }
     }
