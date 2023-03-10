@@ -51,11 +51,22 @@ namespace UserRegistration
         {
             if (registrationModels.Any(Amol => Amol.PhoneNumber.IsMatch(PhoneNumber)))
             {
-                Console.WriteLine("It's a valid PhoneNumber name");
+                Console.WriteLine("It's a valid PhoneNumber");
             }
             else
             {
-                Console.WriteLine("It's a not valid PhoneNumber name");
+                Console.WriteLine("It's a not valid PhoneNumber");
+            }
+        }
+        public void CheckPasswordRule1(string PasswordRule1)
+        {
+            if (registrationModels.Any(Amol => Amol.PasswordRule1.IsMatch(PasswordRule1)))
+            {
+                Console.WriteLine("It's a valid Password");
+            }
+            else
+            {
+                Console.WriteLine("It's a not valid Password");
             }
         }
     }
