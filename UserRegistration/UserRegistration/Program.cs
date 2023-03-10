@@ -13,6 +13,7 @@ namespace UserRegistration
             RegstrationLambada lambada = new RegstrationLambada();
             lambada.CheckFirstName("Amol");
             lambada.CheckLastName("Salunke");
+            lambada.CheckEmailId("abc.xyz@bl.co.in");
             Console.ReadLine();
         }
     }
